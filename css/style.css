@@ -318,7 +318,7 @@ p {
     animation: text_reveal .5s ease forwards;
     animation-delay: 3s;
     text-transform: uppercase;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 #hero h1:nth-child(1){
@@ -341,10 +341,9 @@ p {
     left: 0;
     height: 100%;
     width: 0;
-    background-color: #87704e;
+    background-color: rgba(33, 33, 34, .5);
     animation: text_reveal_box 1s ease;
     animation-delay: .5s;
-    opacity: .5;
 }
 
 #hero P span {
@@ -353,10 +352,9 @@ p {
     left: 0;
     height: 100%;
     width: 0;
-    background-color: #87704e;
+    background-color: rgba(33, 33, 34, .5);
     animation: text_reveal_box 1s ease;
     animation-delay: .5s;
-    opacity: .5;
 }
 
 #hero h1:nth-child(1) span {
