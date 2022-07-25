@@ -36,19 +36,55 @@ p {
     padding: 10px 30px;
     color: white;
     background-color: transparent;
-    border: 2px solid #87704e;
+    /* border: 2px solid #87704e; */
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
-    margin-top: 30px;
-    transition: .3s ease;
-    transition-property: background-color, color;
-    transition-delay: .1s;
+    margin-top: 115px;
+    transition: .3s ease-in;
+    transition-property: height;
+    transition-delay: .5s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    animation: opacity 8s ease-in-out;
 }
 
-.cta:hover {
-    color: white;
-    background-color: #87704e;
+.cta::before,
+.cta::after,
+.cta span::before,
+.cta span::after {
+    content: '';
+    position: absolute;
+    height: 0%;
+    width: calc(100% / 4);
+    background: #87704e;
+    transition: height .5s ease-in;
+    z-index: -1;
+}
+
+.cta::before {
+    left: 0;
+    top: 0;
+}
+.cta::after {
+    bottom: 0;
+    left: 75%;
+}
+.cta span::before {
+    bottom: 0;
+    left: 25%;
+}
+.cta span::after {
+    top: 0;
+    left: 50%;
+}
+
+.cta:hover::before,
+.cta:hover::after,
+.cta:hover span::before,
+.cta:hover span::after {
+    height: 100%;
 }
 
 .container {
@@ -633,6 +669,15 @@ input[type=submit]:hover {
 
 /* keyframes */
 
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 @keyframes hamburger_puls {
     0% {
         opacity: 1;
@@ -686,7 +731,7 @@ input[type=submit]:hover {
     h1.section-title {
         font-size: 6rem;
     }
-    
+
 
     /* hero */
 
