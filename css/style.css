@@ -110,13 +110,20 @@ p {
 }
 
 .brand h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
     color: white;
 }
 
-.brand h1 span {
-    color: white;
+.brand span {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.brand  img {
+    width: 20px;
+    height: 20px;
 }
 
 /* header section */
@@ -307,6 +314,15 @@ p {
     animation-delay: 1s;
     text-transform: uppercase;
     margin-top: 10px;
+}
+
+#hero h1 img {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    animation: img_reveal .5s ease forwards;
+    opacity: 0;
+    animation-delay: 1s;
 }
 
 #hero P {
@@ -712,6 +728,12 @@ input[type=submit]:hover {
     }
 }
 
+@keyframes img_reveal {
+    100% {
+        opacity: 1;
+    }
+}
+
 @keyframes bganimate {
     0%, 100% {
         background-image: url('/img/pgdwntokosiang.jpg');
@@ -743,6 +765,11 @@ input[type=submit]:hover {
 
     #hero h1 {
         font-size: 5.8rem;
+    }
+
+    #hero h1 img {
+        width: 45px;
+        height: 45px;
     }
 
     /* end hero */
@@ -882,16 +909,19 @@ input[type=submit]:hover {
         display: none;
     }
 
-    #project .all-project {
-        box-shadow:  -9px 9px 54px #d4d4d4, 9px -9px 54px #ffffff;
-    }
+    
 
 
 /* end hamburger */
 
-    #service .service-bottom .service-item {
-        flex-basis: 22%;
-        margin: 1.5%;
+    #project .all-project {
+        box-shadow:  -9px 9px 54px #d4d4d4, 9px -9px 54px #ffffff;
     }
+
+    #hero h1 img {
+        width: 45px;
+        height: 45px;
+    }
+    
 }
 /* end media query for destop */
