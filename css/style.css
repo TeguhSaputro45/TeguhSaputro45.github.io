@@ -275,6 +275,7 @@ p {
     position: relative;
     z-index: 1;
     animation: bganimate 10s ease infinite;
+    box-shadow:  -9px 9px 54px #d4d4d4, 9px -9px 54px #ffffff;
 }
 
 #hero::after {
@@ -396,6 +397,9 @@ p {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border: 10px;
+    background: linear-gradient(225deg, #e6e6e6, #ffffff);
+    box-shadow:  -9px 9px 54px #d4d4d4, 9px -9px 54px #ffffff;
 }
 
 #projects .project-item {
@@ -509,6 +513,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(225deg, #e6e6e6, #ffffff);
+    box-shadow:  -9px 9px 54px #d4d4d4, 9px -9px 54px #ffffff;
 }
 
 /* end of About section */
@@ -528,19 +534,20 @@ p {
 #contact .contact-item {
     width: 80%;
     text-align: center;
-    border-radius: 10px;
     padding: 30px;
     margin: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0px 0px 18px 0 #0000002c;
     transition: .3 ease box-shadow;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow:  -9px 9px 54px #d4d4d4, 9px -9px 54px #ffffff;
 }
 
 #contact .contact-item:hover {
-    box-shadow: 0px 0px 5px 0 #0000002c;
+    box-shadow: inset -17px 17px 36px #ebebeb, inset 17px -17px 36px #ffffff;
 
 }
 
@@ -579,23 +586,21 @@ p {
 
 input[type=text], select, textarea {
     width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    box-shadow: 0px 0px 18px 0 #0000002c;
-    border-radius: 4px;
-    box-sizing: border-box;
+    padding: 12px;;
     margin-top: 6px;
     margin-bottom: 16px;
-    resize: vertical
-  }
+    border-radius: 5px;
+    border: 1px solid white;
+    box-shadow:  -9px 9px 54px #d4d4d4, 9px -9px 54px #ffffff;;
+}
 
   /* Style submit button */
 input[type=submit] {
     background-image: linear-gradient(60deg, #11151a 0%, #2f343a 100%);
     color: white;
     padding: 12px 20px;
+    box-shadow:  -16px 16px 23px #a6a6a6, 16px -16px 23px #ffffff;
     border: .8px;
-    box-shadow: 0px 0px 18px 0 #0000002c;
     border-radius: 4px;
     cursor: pointer;
   }
@@ -624,6 +629,7 @@ input[type=submit]:hover {
 
 #footer {
     background-image: linear-gradient(60deg, #11151a 0%, #2f343a 100%);
+    box-shadow:  -9px 9px 54px #d4d4d4, 9px -9px 54px #ffffff;
 }
 
 #footer .footer {
