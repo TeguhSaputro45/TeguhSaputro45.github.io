@@ -398,8 +398,7 @@ p {
     justify-content: center;
     flex-direction: column;
     border: 10px;
-    background: linear-gradient(225deg, #e6e6e6, #ffffff);
-    box-shadow:  -9px 9px 54px #d4d4d4, 9px -9px 54px #ffffff;
+    
 }
 
 #projects .project-item {
@@ -882,6 +881,10 @@ input[type=submit]:hover {
 
     #header .nav-list ul a::after {
         display: none;
+    }
+
+    #project .all-project {
+        box-shadow:  -9px 9px 54px #d4d4d4, 9px -9px 54px #ffffff;
     }
 
 
