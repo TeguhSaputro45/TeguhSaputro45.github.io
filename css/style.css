@@ -58,7 +58,7 @@ p {
     position: absolute;
     height: 0%;
     width: calc(100% / 4);
-    background: #87704e;
+    background: #87704ea6;
     transition: height .5s ease-in;
     z-index: -1;
 }
