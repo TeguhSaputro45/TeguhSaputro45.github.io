@@ -341,7 +341,7 @@ p {
     left: 0;
     height: 100%;
     width: 0;
-    background-color: rgba(33, 33, 34, .5);
+    background-color: rgba(180, 180, 180, 0.267);
     animation: text_reveal_box 1s ease;
     animation-delay: .5s;
 }
@@ -351,8 +351,9 @@ p {
     top: 0;
     left: 0;
     height: 100%;
+    background-color: rgba(180, 180, 180, 0.075);
     width: 0;
-    background-color: rgba(33, 33, 34, .5);
+    /* background-color: rgba(33, 33, 34, .5); */
     animation: text_reveal_box 1s ease;
     animation-delay: .5s;
 }
