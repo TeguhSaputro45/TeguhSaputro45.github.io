@@ -357,7 +357,8 @@ p {
     left: 0;
     height: 100%;
     width: 0;
-    background-color: rgba(180, 180, 180, 0.267);
+    /* background-color: rgba(180, 180, 180, 0.267); */
+    background-color: rgba(180, 180, 180, 0.075);
     animation: text_reveal_box 1s ease;
     animation-delay: .5s;
 }
