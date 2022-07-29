@@ -281,7 +281,7 @@ p {
     background-position: top center;
     position: relative;
     z-index: 1;
-    animation: bganimate 15s ease infinite;
+    animation: bganimate 20s ease infinite;
     box-shadow:  -9px 9px 54px #d4d4d4, 9px -9px 54px #ffffff;
 }
 
